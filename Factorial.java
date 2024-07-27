@@ -1,18 +1,17 @@
-package com.ece.hipdemo;
-
-public class Factorial 
-{
-	void meth1(int n)
-	{
-		int res = 1;
-		for(int i=1;i<=n;i++)
+package revature;
+public class Factorial {
+	
+		void meth1(int num)
 		{
-			res = res*i;
+			int res = 1;
+			for(int i=1;i<=num;i++)
+			{
+				res = res*i;
+			}
+			System.out.println("factorial of " + num +" is " + res);
 		}
-		System.out.println("factorial of " + n +" is " + res);
-	}
-	public static void main(String[] args)
-	{
-		new Factorial().meth1(5);;
-	}
+		public static void main(String[] args)
+		{
+			new Factorial().meth1(5);
+		}	
 }
